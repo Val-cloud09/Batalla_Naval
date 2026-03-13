@@ -20,12 +20,15 @@ int main() {
 }
         printf("\n");
 }
+for(int turno=0;turno<5;turno++){
 // Pedir disparo
     printf("Fila: ");
     scanf("%d", &fila);
     printf("Columna: ");
     scanf("%d", &columna);
 // AQUÍ DEBES COMPLETAR:
+
+
 // evaluar si hay barco o agua
     if(tablero[fila][columna]==1){
         printf("\n----impacto----\n");
@@ -37,20 +40,22 @@ int main() {
     }
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++){
+
             if(tablero[i][j]==1){
                 printf("~ ");
     }
             else if(tablero[i][j]==2){
-                printf("O");
+                printf("O ");
     }
             else if(tablero[i][j]==3){
-                printf("X");
+                printf("X ");
     }
             else{
                 printf("~ ");
             }
         }
+        printf("\n");
     }
-
+}
     return 0;
 }
