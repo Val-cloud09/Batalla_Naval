@@ -26,9 +26,6 @@ for(int turno=0;turno<5;turno++){
     scanf("%d", &fila);
     printf("Columna: ");
     scanf("%d", &columna);
-// AQUÍ DEBES COMPLETAR:
-
-
 // evaluar si hay barco o agua
     if(tablero[fila][columna]==1){
         printf("\n----impacto----\n");
